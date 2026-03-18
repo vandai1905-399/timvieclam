@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TimViecLam - Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TimViecLam</h1>
+      <p class="tag">Ứng dụng tìm việc mẫu — trang web</p>
+    </header>
+
+    <main>
+      <section id="login-section">
+        <h2>Đăng nhập</h2>
+        <form id="login-form">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+
+          <label for="password">Mật khẩu</label>
+          <input id="password" type="password" placeholder="Mật khẩu" required>
+
+          <button id="login-btn" type="submit">Đăng nhập</button>
+        </form>
+        <p id="message" class="message"></p>
+        <p class="note">Chưa có tài khoản? (demo) — nhập bất kỳ email hợp lệ và mật khẩu ≥4 ký tự để thử.</p>
+      </section>
+
+      <section id="dashboard" class="hidden">
+        <h2>Bảng điều khiển</h2>
+        <p id="welcome-text"></p>
+        <button id="logout">Đăng xuất</button>
+      </section>
+    </main>
+
+    <footer>
+      <small>Gợi ý: mở trang này trên điện thoại hoặc dùng trình tạo ứng dụng (Ionic/Capacitor/Expo) để đóng gói thành mobile app.</small>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
